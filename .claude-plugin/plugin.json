@@ -1,0 +1,10 @@
+{
+  "name": "deslopify",
+  "description": "Strip AI-writing tells from prose so it reads like a human wrote it. Ships a deslopify skill plus a detrope subagent other agents can call. Trope catalog based on tropes.fyi by Ossama, extended with researched sources.",
+  "version": "0.1.0",
+  "author": { "name": "Axel Sooriah", "email": "axel.sooriah@gmail.com" },
+  "license": "MIT",
+  "keywords": ["writing", "editing", "ai-slop", "deslop", "detrope", "prose", "humanize", "agent-skills"],
+  "skills": ["./skills/deslopify"],
+  "agents": ["./agents/detrope.md"]
+}

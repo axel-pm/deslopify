@@ -1,0 +1,17 @@
+{
+  "name": "deslopify",
+  "owner": { "name": "Axel Sooriah", "email": "axel.sooriah@gmail.com" },
+  "metadata": { "description": "Deslopify — strip AI-writing tells from prose so it reads like a human wrote it." },
+  "plugins": [
+    {
+      "name": "deslopify",
+      "source": "./",
+      "strict": false,
+      "description": "Strip AI-writing tells from prose so it reads like a human wrote it. Catalog based on tropes.fyi by Ossama.",
+      "version": "0.1.0",
+      "license": "MIT",
+      "category": "writing",
+      "keywords": ["writing", "editing", "ai-slop", "deslop", "detrope", "prose"]
+    }
+  ]
+}

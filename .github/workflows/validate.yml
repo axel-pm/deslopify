@@ -1,0 +1,67 @@
+name: validate
+
+# Runs on every push and pull request. Two quick checks:
+#   1. A structural sanity check: SKILL.md frontmatter parses and the files the
+#      docs reference actually exist.
+#   2. `claude plugin validate .` if the Claude CLI is available, so the
+#      plugin/marketplace manifests are well-formed before anyone installs.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check skill structure
+        run: |
+          python3 - <<'EOF'
+          import json, re, sys, pathlib
+
+          errors = []
+
+          skill = pathlib.Path("skills/deslopify/SKILL.md").read_text()
+          m = re.match(r"^---\n(.*?)\n---\n", skill, re.S)
+          if not m:
+              errors.append("SKILL.md has no frontmatter block")
+          else:
+              fm = m.group(1)
+              for field in ("name:", "description:", "license:"):
+                  if field not in fm:
+                      errors.append(f"SKILL.md frontmatter missing {field}")
+
+          for p in [
+              "skills/deslopify/references/tropes.md",
+              "skills/deslopify/references/sources.md",
+              "agents/detrope.md",
+              ".claude-plugin/plugin.json",
+              ".claude-plugin/marketplace.json",
+              "LICENSE",
+          ]:
+              if not pathlib.Path(p).exists():
+                  errors.append(f"missing file: {p}")
+
+          for p in (".claude-plugin/plugin.json", ".claude-plugin/marketplace.json"):
+              try:
+                  json.loads(pathlib.Path(p).read_text())
+              except Exception as e:
+                  errors.append(f"{p} is not valid JSON: {e}")
+
+          if errors:
+              print("\n".join(errors))
+              sys.exit(1)
+          print("skill structure OK")
+          EOF
+
+      - name: Validate plugin + marketplace manifests
+        run: |
+          if command -v claude >/dev/null 2>&1; then
+            claude plugin validate .
+          else
+            echo "claude CLI not present on the runner; skipping manifest validation."
+            echo "The manifests are checked locally before release."
+          fi
