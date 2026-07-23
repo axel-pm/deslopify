@@ -29,7 +29,7 @@ Then just ask, in plain words:
 
 **Manual install** (no plugin system): copy `skills/deslopify/` into `~/.claude/skills/` and, optionally, `agents/detrope.md` into `~/.claude/agents/`.
 
-**Using a different agent** (Rovo Dev CLI, Codex, Cursor, …)? See [AGENTS.md](AGENTS.md). The skill is plain Markdown in an open format that several other coding agents read.
+**Using a different agent** (Rovo CLI, Codex, Cursor, …)? See [AGENTS.md](AGENTS.md). The skill is plain Markdown in an open format that several other coding agents read.
 
 ## What's in the catalog
 
