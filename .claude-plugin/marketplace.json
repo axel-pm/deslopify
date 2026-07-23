@@ -7,7 +7,7 @@
       "name": "deslopify",
       "source": "./",
       "strict": false,
-      "description": "Strip AI-writing tells from prose so it reads like a human wrote it. Catalog based on tropes.fyi by Ossama.",
+      "description": "Strip AI-writing tells from prose so it reads like a human wrote it. Catalog based on tropes.fyi by Ossama Chahib.",
       "version": "0.1.0",
       "license": "MIT",
       "category": "writing",

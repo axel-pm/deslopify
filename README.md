@@ -43,7 +43,7 @@ This plugin is prose-only — no scripts, nothing executes. It's Markdown instru
 
 ## Credits
 
-The heart of this project is the trope catalog from **[tropes.fyi](https://tropes.fyi)** by **[Ossama](https://ossama.is)** — the clearest, best-curated taxonomy of AI writing tells around. Thank you, Ossama.
+The heart of this project is the trope catalog from **[tropes.fyi](https://tropes.fyi)** by **[Ossama Chahib](https://ossama.is)** — the clearest, best-curated taxonomy of AI writing tells around. Thank you, Ossama.
 
 The extended catalog also draws on (all paraphrased, licenses noted in [sources.md](skills/deslopify/references/sources.md)):
 

@@ -35,4 +35,4 @@ Nothing. No scripts, no dependencies, no API keys, no network. It's instructions
 
 ## Credit
 
-The trope catalog is based on [tropes.fyi](https://tropes.fyi) by [Ossama](https://ossama.is), extended with the sources listed in `skills/deslopify/references/sources.md`.
+The trope catalog is based on [tropes.fyi](https://tropes.fyi) by [Ossama Chahib](https://ossama.is), extended with the sources listed in `skills/deslopify/references/sources.md`.

@@ -4,7 +4,7 @@ Where the catalog comes from, what each source contributes, and how it may be re
 
 ## Primary
 
-- **[tropes.fyi](https://tropes.fyi)** — Ossama ([ossama.is](https://ossama.is)). The base catalog this whole project is built on: word choice, sentence structure, tone, formatting, and composition tropes with examples. If you read one source, read this one.
+- **[tropes.fyi](https://tropes.fyi)** — Ossama Chahib ([ossama.is](https://ossama.is)). The base catalog this whole project is built on: word choice, sentence structure, tone, formatting, and composition tropes with examples. If you read one source, read this one.
 
 ## Catalog extensions
 

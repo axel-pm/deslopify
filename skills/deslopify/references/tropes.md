@@ -1,6 +1,6 @@
 # The full trope catalog
 
-Every tell worth scanning for, grouped by category. The base catalog comes from [tropes.fyi](https://tropes.fyi) by Ossama; sections drawn from other sources are tagged in brackets and listed in [sources.md](sources.md). Everything here is paraphrased, not copied.
+Every tell worth scanning for, grouped by category. The base catalog comes from [tropes.fyi](https://tropes.fyi) by Ossama Chahib; sections drawn from other sources are tagged in brackets and listed in [sources.md](sources.md). Everything here is paraphrased, not copied.
 
 A reminder before you use it: a single occurrence of almost anything below is fine. You are hunting repetition, clustering, and density — not individual words.
 

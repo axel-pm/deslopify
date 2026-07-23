@@ -95,4 +95,4 @@ Any single trope used once may be fine. The problem is repetition or clustering.
 - Don't over-correct: leave the occasional single trope if it actually works. An em dash, a rhetorical question, or clean grammar is not, by itself, proof of AI.
 - Don't override an explicit house style. If the caller says a trope is allowed here ("em dashes are fine", "keep the curly quotes/arrows"), respect it — those instructions win over this catalog.
 
-Primary source for this catalog: tropes.fyi by Ossama (ossama.is). Extended with the sources listed in the plugin's `skills/deslopify/references/sources.md`.
+Primary source for this catalog: tropes.fyi by Ossama Chahib (ossama.is). Extended with the sources listed in the plugin's `skills/deslopify/references/sources.md`.

@@ -62,4 +62,4 @@ The test is always density and clustering, never a single occurrence.
 
 ---
 
-Primary catalog source: [tropes.fyi](https://tropes.fyi) by Ossama ([ossama.is](https://ossama.is)). Extended with the researched sources listed in [references/sources.md](references/sources.md).
+Primary catalog source: [tropes.fyi](https://tropes.fyi) by Ossama Chahib ([ossama.is](https://ossama.is)). Extended with the researched sources listed in [references/sources.md](references/sources.md).
