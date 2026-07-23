@@ -19,6 +19,16 @@ The skill removes AI-writing tells from prose (em-dash abuse, "It's not X — it
 /plugin install deslopify@deslopify
 ```
 
+**Atlassian Rovo Dev CLI** — Rovo Dev supports the open Agent Skills format natively and auto-discovers skills, no config needed. Copy the skill folder into its user-level skills directory (or `.rovodev/skills/` inside a project for project scope):
+
+```sh
+git clone https://github.com/axel-pm/deslopify
+mkdir -p ~/.rovodev/skills
+cp -R deslopify/skills/deslopify ~/.rovodev/skills/
+```
+
+Rovo Dev also reads the cross-agent `~/.agents/skills/` location (see below), so if you already install skills there, one copy serves both. Verify it's picked up by running `/skills` in the Rovo Dev TUI, then ask it to "deslopify this draft" as usual. Details: [Extend Rovo Dev CLI with Agent Skills](https://support.atlassian.com/rovo/docs/extend-rovo-dev-cli-with-agent-skills/).
+
 **OpenAI Codex, and other agents that read the open skill format** — copy (or symlink) the skill folder into the place that agent looks for skills. For Codex and several others, that's an `.agents/skills/` folder in your project or home directory:
 
 ```sh

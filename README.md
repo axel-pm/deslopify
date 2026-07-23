@@ -4,7 +4,7 @@
 
 ## What problem this solves
 
-AI-drafted text has a fingerprint. Readers have learned it, and once they spot it they stop trusting the words. The fingerprint isn't one bad word — it's a few dozen recurring tropes: negative parallelism, tricolons, hedging clusters, fake suspense, metronomic rhythm, "In conclusion".
+AI-drafted text has a fingerprint. Readers have learned it, and once they spot it they stop trusting the words. The fingerprint is a few dozen recurring tropes rather than any one bad word: negative parallelism, tricolons, hedging clusters, fake suspense, metronomic rhythm, "In conclusion".
 
 Deslopify gives your agent a curated, sourced catalog of those tropes and a disciplined way to remove them: rewrite rather than delete, preserve the author's meaning and voice, and never over-correct (one em dash is style; fourteen are a tell).
 
@@ -29,7 +29,7 @@ Then just ask, in plain words:
 
 **Manual install** (no plugin system): copy `skills/deslopify/` into `~/.claude/skills/` and, optionally, `agents/detrope.md` into `~/.claude/agents/`.
 
-**Using a different agent?** See [AGENTS.md](AGENTS.md). The skill is plain Markdown in an open format that several other coding agents read.
+**Using a different agent** (Rovo Dev CLI, Codex, Cursor, …)? See [AGENTS.md](AGENTS.md). The skill is plain Markdown in an open format that several other coding agents read.
 
 ## What's in the catalog
 
@@ -39,7 +39,7 @@ Then just ask, in plain words:
 
 ## A note on trust
 
-This plugin is prose-only — no scripts, nothing executes. It's Markdown instructions your agent reads. MIT licensed; read every file before installing if you like, it won't take long.
+This plugin is prose-only: no scripts, nothing executes. It's Markdown instructions your agent reads. MIT licensed; read every file before installing if you like, it won't take long.
 
 ## Credits
 
@@ -58,7 +58,7 @@ Related work: [skill-deslop](https://github.com/stephenturner/skill-deslop) by S
 
 ## Contributing
 
-Issues and PRs welcome — especially new tells with sources, and false positives for the "not tells" list. `claude plugin validate .` checks the manifests.
+Issues and PRs welcome, especially new tells with sources, and false positives for the "not tells" list. `claude plugin validate .` checks the manifests.
 
 ## License
 
